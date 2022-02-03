@@ -19,11 +19,16 @@
     outline: none;
 }
 body {
-    font-family: "Merriweather";
+    font-family: "Montserrat";
     font-size: 100%;
     color: #2e2e2e;
     letter-spacing: .01rem;
     font-size: 100%;
+}
+p {
+    font-family: "PlayfairDisplay" sans-serif;
+    line-height: 36px;
+    margin: 25px 0;
 }
 a,
 a:visited {
@@ -40,15 +45,24 @@ a:hover {
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
 }
+em {
+    font-weight: 550;
+    color: skyblue;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+}
 /*********************************** Navigation ****************************************/
 nav {
 
-    font-family: "Montserrat";
+    font-family: "Montserrat" sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     text-align: center;
-    
     padding: 1.5em;
     font-weight: 600;
 }
@@ -63,21 +77,60 @@ nav {
     align-content: flex-end;
     align-items: flex-end;
 }
-li {
- 
-}
 /**************************************** Header *******************************************/
 header {
-    display: block;
     padding: 2rem;
     background-color: #f5f8fa;
     text-shadow: 5px 4px 5px rgba(196, 217, 255, 0.445);
+    
+}
+img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 6px;
+    border-color: rgba(0,0,0,.125);
+}
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+h2 {
+    font-weight: 400;
+    color: #aaa;
+    margin-bottom: 0.5rem;
 }
 .center {
     text-align: center;
+    min-height: 400px;
 }
-/**************************************** Citation *****************************************/
-.quote {
-    background-color: aquamarine;
-    min-height: 200px;
+/**************************************** About *****************************************/
+.about {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    min-height: 600px;
+}
+.about .img {
+    background:url(../img/about.jpg) center/cover;
+
+}
+/**************************************** Projects **************************************/
+.projects {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: 600px;
+}
+.projects .img {
+    background: url(../img/projets.jpg) center/cover;
+}
+/**************************************** Contact ***************************************/
+.contact {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    min-height: 600px;
+}
+.contact .img {
+    background: url(../img/contact.jpg) center/cover;
 }
