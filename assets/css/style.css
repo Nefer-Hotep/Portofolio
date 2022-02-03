@@ -1,4 +1,4 @@
-/*********************************** Définition des polices personnalisées ********************************/
+/*********************** Définition des polices personnalisées *************************/
 @font-face {
     font-family: "Merriweather";
     src: url(../font/Merriweather-Regular.ttf);
@@ -11,7 +11,7 @@
     font-family: "PlayfairDisplay";
     src: url(../font/PlayfairDisplay-Medium.ttf);
 }
-/*********************************** Eléments principaux de la page ***************************************/
+/**************************** Eléments principaux de la page ***************************/
 * {
     margin: 0;
     padding: 0;
@@ -21,38 +21,62 @@
 body {
     font-family: "Merriweather";
     font-size: 100%;
+    color: #2e2e2e;
+    letter-spacing: .01rem;
+    font-size: 100%;
 }
-/*********************************** Header ****************************************************************/
+a,
+a:visited {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue;
+    transition: 0.4s;
+}
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);
+}
+/*********************************** Navigation ****************************************/
+nav {
+
+    font-family: "Montserrat";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    text-align: center;
+    
+    padding: 1.5em;
+    font-weight: 600;
+}
+.nav_left {
+    letter-spacing: 0.5em;
+    font-weight: 1000;
+}
+.nav_right {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+li {
+ 
+}
+/**************************************** Header *******************************************/
 header {
-    background-color: #1B242F;
-    padding: 60px 20px;
-    border: 2px solid darkred;
-    color: white;
+    display: block;
+    padding: 2rem;
+    background-color: #f5f8fa;
     text-shadow: 5px 4px 5px rgba(196, 217, 255, 0.445);
 }
-.container_header {
-    display: flex;
-    border: 2px solid darkred;
+.center {
+    text-align: center;
 }
-h1 {
-    
-
-}
-nav {
-    background-color: white;
-    
-}
-nav ul {
-    display: flex;
-}
-nav li {
-    margin-right: 15px;
-}
-nav a
-{
-    
-}
-/*********************************** Citation **************************************************************/
+/**************************************** Citation *****************************************/
 .quote {
     background-color: aquamarine;
     min-height: 200px;
