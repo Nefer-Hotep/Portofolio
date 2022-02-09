@@ -2,14 +2,17 @@
 @font-face {
     font-family: "Merriweather";
     src: url(../font/Merriweather-Regular.ttf);
+    font-weight: normal;
 }
 @font-face {
     font-family: "Montserrat";
     src: url(../font/Montserrat-Medium.ttf);
+    font-weight: normal;
 }
 @font-face {
     font-family: "PlayfairDisplay";
     src: url(../font/PlayfairDisplay-Medium.ttf);
+    font-weight: normal;
 }
 /**************************** Eléments principaux de la page ***************************/
 * {
@@ -20,13 +23,12 @@
 }
 body {
     font-family: "Montserrat";
-    font-size: 100%;
     color: #2e2e2e;
-    letter-spacing: .01rem;
-    font-size: 100%;
+    letter-spacing: .05rem;
 }
 p {
-    font-family: "PlayfairDisplay" sans-serif;
+    font-family: "Merriweather", sans-serif;
+    font-size: 20px;
     line-height: 36px;
     margin: 25px 0;
 }
@@ -45,6 +47,10 @@ a:hover {
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
 }
+h3 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2.5rem;
+}
 em {
     font-weight: 550;
     color: skyblue;
@@ -57,8 +63,6 @@ em {
 }
 /*********************************** Navigation ****************************************/
 nav {
-
-    font-family: "Montserrat" sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
@@ -133,4 +137,12 @@ h2 {
 }
 .contact .img {
     background: url(../img/contact.jpg) center/cover;
+}
+/*************************************** Footer *****************************************/
+footer {
+    padding: 70px 0 90px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
 }
