@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  outline: none;
 }
 body {
   font-family: "Montserrat";
@@ -119,12 +118,12 @@ h2 {
   background: url(../img/about.jpg) center/cover;
 }
 /**************************************** Projects **************************************/
-.projects {
+.project {
   display: grid;
   grid-template-columns: 60% 40%;
   min-height: 600px;
 }
-.projects .img {
+.project .img {
   background: url(../img/projets.jpg) center/cover;
 }
 /**************************************** Contact ***************************************/
