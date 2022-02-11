@@ -1,5 +1,160 @@
-/***********************************Elément principaux de la page ********************************/
+/*********************** Définition des polices personnalisées *************************/
 @font-face {
-    font-family: ;
-    src: url();
+  font-family: "Merriweather";
+  src: url(../font/Merriweather-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat-Medium.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../font/PlayfairDisplay-Medium.ttf);
+  font-weight: normal;
+}
+/**************************** Eléments principaux de la page ***************************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  font-family: "Montserrat";
+  color: #2e2e2e;
+  letter-spacing: 0.05rem;
+}
+p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 25px 0;
+}
+a,
+a:visited {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: skyblue;
+  transition: 0.4s;
+}
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.125);
+}
+h3 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 2.5rem;
+}
+em {
+  font-weight: 550;
+  color: skyblue;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px;
+}
+/*********************************** Navigation ****************************************/
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  text-align: center;
+  padding: 1.5em;
+  font-weight: 600;
+}
+.nav_left {
+  letter-spacing: 0.5em;
+  font-weight: 1000;
+}
+.nav_right {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+/**************************************** Header *******************************************/
+header {
+  padding: 2rem;
+  background-color: #f5f8fa;
+  text-shadow: 5px 4px 5px rgba(196, 217, 255, 0.445);
+}
+img {
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  border-radius: 50%;
+  border-style: double;
+  border-width: 6px;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+.center {
+  text-align: center;
+  min-height: 400px;
+}
+/**************************************** About *****************************************/
+.about {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  min-height: 600px;
+}
+.about .img {
+  background: url(../img/about.jpg) center/cover;
+}
+/**************************************** Projects **************************************/
+.project {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 600px;
+}
+.project .img {
+  background: url(../img/projets.jpg) center/cover;
+}
+/**************************************** Contact ***************************************/
+.contact {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  min-height: 600px;
+}
+.contact .img {
+  background: url(../img/contact.jpg) center/cover;
+}
+/*************************************** Footer *****************************************/
+footer {
+  padding: 70px 0 90px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+  margin: auto;
+}
+/**************************************** Responsive ***********************************/
+@media screen and (max-width: 650px) {
+  nav,
+  .about,
+  .project,
+  .contact {
+    display: block;
+  }
+  .nav_left {
+    padding: 10px;
+  }
 }
